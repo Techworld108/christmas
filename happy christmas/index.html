@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happy christmas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <img src="bg (2).jpg" id="bg" alt="">
+        <img src="moon.png" id="moon" alt="">
+        <img src="cloud1.png" id="cloud1" alt="">
+        <img src="cloud2.png" id="cloud2" alt="">
+        <img src="santa.png" id="santa" alt="">
+        <div id="tree"></div>
+        <h2 id="text">Happy Christmas</h2>
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+<script>
+    gsap.to('#moon',{
+        scrollTrigger:{
+            scrub:1
+        },
+        scale:1.4,
+    })
+    gsap.to('#bg',{
+        scrollTrigger:{
+            scrub:1
+        },
+        scale:1.1,
+    })
+    gsap.to('#santa',{
+        scrollTrigger:{
+            scrub:1
+        },
+        scale:1.5,
+        y: -500,
+        x: 2200
+    })
+    gsap.to('#tree',{
+        scrollTrigger:{
+            scrub:1
+        },
+        x: -500,
+    })
+    gsap.to('#cloud1',{
+        scrollTrigger:{
+            scrub:1
+        },
+        x: -200,
+    })
+    gsap.to('#cloud2',{
+        scrollTrigger:{
+            scrub:1
+        },
+        x: 300,
+    })
+    gsap.to('#text',{ 
+        scrollTrigger:{
+            scrub:1
+        },
+        y: -750,
+    })
+</script>
+</body>
+
+</html>
